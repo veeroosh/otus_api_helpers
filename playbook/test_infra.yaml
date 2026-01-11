@@ -1,0 +1,9 @@
+- hosts: latysheva_server
+  remote_user: "root"
+  become: yes
+  roles:
+    - docker
+    - docker_compose
+    - configs
+    - wiremock
+    - selenoid
